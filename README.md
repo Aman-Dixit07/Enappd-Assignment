@@ -3,16 +3,22 @@
 Live url - https://waitlistuii.netlify.app/
 
 Built by - Aman Dixit
+
 Email - amandixitbsp@gmail.com
+
 Phone - 9981788841
+
 Github - https://github.com/Aman-Dixit07
 
 
 #Tech Stack
 
 -Nextjs
+
 -Tailwind Css 
+
 -App Router
+
 -Deployed on Netlify
 
 #How i built it

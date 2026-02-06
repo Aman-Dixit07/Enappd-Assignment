@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#Waitlist UI Assignment
 
-## Getting Started
+Live url - https://waitlistuii.netlify.app/
 
-First, run the development server:
+Built by - Aman Dixit
+Email - amandixitbsp@gmail.com
+Phone - 9981788841
+Github - https://github.com/Aman-Dixit07
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-Nextjs
+-Tailwind Css 
+-App Router
+-Deployed on Netlify
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#How i built it
 
-## Learn More
+1. UI
 
-To learn more about Next.js, take a look at the following resources:
+-Followed every rule as per the instruction using the tailwind css and made it to open in both phone screens and desktops.
+-For color code i used hex to tailwind converter to get the exact color as per instruction. i.e. #f3f4f6 (HEX) --> GRAY-100 (Tailwind)
+-And followed every other rules as per instruction and kept it simple.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Logic & Validation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-Email validation: I split the email string by '@' and checked if the domain part matches my blockedDomains array (gmail, yahoo, etc.) and also used 'toLowerCase()' to handle case variations.
+-Reason validation: Simple 'reason.length < 20' to check and show error only on submit, not while typing.
+-Success state: On succesful inputs i used the another page created as /success to send after the user hits the request access token button (We can also show the same ui in the same page.)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#Problem faced
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-Problem - Whenever i used to write the reason in the input field the reson error starts to show even though i didnt want to show until i stopped typing.
+-Fix - it was happening due i was updating the reason error in the same onchange function so i simply removed it due to which it only shows the rror when i sub,mit the form.
+
+#Installation 
+
+1.Clone
+2.Build - npm run buld
+3.Start - npm run start
